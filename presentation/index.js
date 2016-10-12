@@ -68,7 +68,7 @@ export default class Presentation extends React.Component {
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
           <Slide transition={["zoom"]} bgColor="secondary">
             <Image src={images.thehaps} height="293px"/>
-            <Heading size={1} fit textColor="black">
+            <Heading size={1} fit textColor="primary">
               Local events in your hand!
             </Heading>
             {/* <Link href="https://github.com/FormidableLabs/spectacle">
@@ -77,10 +77,10 @@ export default class Presentation extends React.Component {
             <Text textSize="1.5em" margin="20px 0px 0px" bold>Hit Your Right Arrow To Begin!</Text> */}
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
-            <Heading size={2} caps fit textColor="secondary" textFont="primary">
+            <Heading size={1} caps fit textColor="secondary" textFont="primary">
               The Problem:
             </Heading>
-            <Heading size={1} fit textColor="primary" textFont="primary">
+            <Heading size={2} fit textColor="primary" textFont="primary">
               Existing event sources...
             </Heading>
             <List textColor="white">
@@ -91,7 +91,7 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.concert} bgDarken={0.75}>
-            <Heading size={2} caps textColor="secondary" textFont="primary">
+            <Heading size={2} caps textColor="white" textFont="primary">
               The Solution:
             </Heading>
             <BlockQuote>
@@ -99,82 +99,82 @@ export default class Presentation extends React.Component {
               <Cite>God</Cite>
             </BlockQuote>
           </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
-              Features:
-            </Heading>
+          <Slide transition={["slide"]} bgColor="white">
             <Layout>
-              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
-                Map View
-                <List textColor="white">
-                  <Appear><ListItem>Google Maps JS API</ListItem></Appear>
-                  <Appear><ListItem>Custom SVG Markers</ListItem></Appear>
-                  <Appear><ListItem>Content Preview Info Windows</ListItem></Appear>
-                </List>
+              <Heading textColor="secondary" textFont="primary" textAlign="left" >
+                FEATURES:
+                <Heading size={2} textColor="primary" textFont="primary" align='flex-start flex-start' textAlign="left">
+                  Map View
+                  <List textColor="secondary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
+                    <Appear><ListItem>Google Maps JS API</ListItem></Appear>
+                    <Appear><ListItem>Custom SVG Markers</ListItem></Appear>
+                    <Appear><ListItem>Content Preview Info Windows</ListItem></Appear>
+                  </List>
+                </Heading>
               </Heading>
-              <Image src={images.mapview} height="500px"/>
+              <Image src={images.mapview} height="600px" margin="20px"/>
             </Layout>
           </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
-              Features:
-            </Heading>
+          <Slide transition={["slide"]} bgColor="white">
             <Layout>
-              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
-                List View
-                <List textColor="white">
-                  <Appear><ListItem>Instant Toggle List/Map</ListItem></Appear>
-                  <Appear><ListItem>Sorted by Time Value</ListItem></Appear>
-                  <Appear><ListItem>3 Spots to Access Filter</ListItem></Appear>
-                </List>
+              <Heading textColor="primary" textFont="primary" textAlign="left" >
+                FEATURES:
+                <Heading size={2} textColor="secondary" textFont="primary" align='flex-start flex-start' textAlign="left">
+                  List View
+                  <List textColor="primary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
+                    <Appear><ListItem>Instant Toggle List/Map</ListItem></Appear>
+                    <Appear><ListItem>Sorted by Time Value</ListItem></Appear>
+                    <Appear><ListItem>3 Spots to Access Filter</ListItem></Appear>
+                  </List>
+                </Heading>
               </Heading>
-              <Image src={images.listview} height="500px"/>
+              <Image src={images.listview} height="600px" style={{marginLeft: "120px"}}/>
             </Layout>
           </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
-              Features:
-            </Heading>
+          <Slide transition={["slide"]} bgColor="white">
             <Layout>
-              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
-                Detail View
-                <List textColor="white">
-                  <Appear><ListItem>Full event description</ListItem></Appear>
-                  <Appear><ListItem>Secondary category</ListItem></Appear>
-                  <Appear><ListItem>Get directions</ListItem></Appear>
-                </List>
+              <Heading textColor="secondary" textFont="primary" textAlign="left" >
+                FEATURES:
+                <Heading size={2} textColor="primary" textFont="primary" align='flex-start flex-start' textAlign="left">
+                  Detail View
+                  <List textColor="secondary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
+                    <Appear><ListItem>Full event description</ListItem></Appear>
+                    <Appear><ListItem>Secondary category</ListItem></Appear>
+                    <Appear><ListItem>Get directions</ListItem></Appear>
+                  </List>
+                </Heading>
               </Heading>
-              <Image src={images.detailview} height="500px"/>
+              <Image src={images.detailview} height="600px" style={{marginLeft: "120px"}}/>
             </Layout>
           </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
-              Features:
-            </Heading>
+          <Slide transition={["slide"]} bgColor="white">
             <Layout>
-              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
-                Filter
-                <List textColor="white">
-                  <Appear><ListItem>Filter by date range - datepicker</ListItem></Appear>
-                  <Appear><ListItem>Filter by category</ListItem></Appear>
-                </List>
+              <Heading textColor="primary" textFont="primary" textAlign="left" >
+                FEATURES:
+                <Heading size={2} textColor="secondary" textFont="primary" align='flex-start flex-start' textAlign="left">
+                  Filter
+                  <List textColor="primary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
+                    <Appear><ListItem>Filter by date range - datepicker</ListItem></Appear>
+                    <Appear><ListItem>Filter by category</ListItem></Appear>
+                  </List>
+                </Heading>
               </Heading>
-              <Image src={images.filter} height="500px"/>
+              <Image src={images.filter} height="600px" style={{marginLeft: "120px"}}/>
             </Layout>
           </Slide>
-          <Slide transition={["slide"]} bgColor="primary">
-            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
-              Features:
-            </Heading>
+          <Slide transition={["slide"]} bgColor="white">
             <Layout>
-              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
-                Add Event
-                <List textColor="white">
-                  <Appear><ListItem>Address geocoded</ListItem></Appear>
-                  <Appear><ListItem>Date + Time = Unix Timestamp</ListItem></Appear>
-                </List>
+              <Heading textColor="secondary" textFont="primary" textAlign="left" >
+                FEATURES:
+                <Heading size={2} textColor="primary" textFont="primary" align='flex-start flex-start' textAlign="left">
+                  Add Event
+                  <List textColor="secondary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
+                    <Appear><ListItem>Address geocoded</ListItem></Appear>
+                    <Appear><ListItem>Date + Time = Unix Timestamp</ListItem></Appear>
+                  </List>
+                </Heading>
               </Heading>
-              <Image src={images.addEvent} height="500px"/>
+              <Image src={images.addEvent} height="600px" style={{marginLeft: "120px"}}/>
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.roadblock} bgDarken={0.75}>
