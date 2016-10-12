@@ -66,17 +66,16 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
-          <Slide transition={["zoom"]} bgColor="secondary">
+          <Slide transition={["zoom"]} bgColor="secondary" style={{paddingTop: '0'}}>
             <Image src={images.thehaps} height="293px"/>
             <Heading size={1} fit textColor="primary">
               Local events in your hand!
             </Heading>
-            {/* <Link href="https://github.com/FormidableLabs/spectacle">
-              <Text bold caps textColor="tertiary">View on Github</Text>
-            </Link>
-            <Text textSize="1.5em" margin="20px 0px 0px" bold>Hit Your Right Arrow To Begin!</Text> */}
+            <Appear><Heading size={4} textColor="white" textFont="primary">
+              http://thehapsmap.com
+            </Heading></Appear>
           </Slide>
-          <Slide transition={["slide"]} bgColor="black">
+          <Slide transition={["fade"]} bgColor="black">
             <Heading size={1} caps fit textColor="secondary" textFont="primary">
               The Problem:
             </Heading>
@@ -90,7 +89,7 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Fragmented</ListItem></Appear>
             </List>
           </Slide>
-          <Slide transition={["slide"]} bgImage={images.concert} bgDarken={0.75}>
+          <Slide transition={["spin"]} bgImage={images.concert} bgDarken={0.75}>
             <Heading size={2} caps textColor="white" textFont="primary">
               The Solution:
             </Heading>
@@ -206,7 +205,7 @@ export default class Presentation extends React.Component {
           <Slide transition={["zoom"]} bgColor="secondary">
             <Image src={images.thehaps} height="293px"/>
             <Heading size={1} fit textColor="#40c4ff">
-              http://thehaps.herokuapp.com/
+              http://thehapsmap.com
             </Heading>
           </Slide>
           {/* <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
