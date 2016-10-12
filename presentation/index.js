@@ -47,7 +47,9 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "#2C3E50"
+  primary: '#40c4ff',
+  // primary: "#3498DB",
+  secondary: "#2C3E50"
 });
 
 export default class Presentation extends React.Component {
@@ -55,9 +57,9 @@ export default class Presentation extends React.Component {
     return (
       <Spectacle theme={theme}>
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
-          <Slide transition={["zoom"]} bgColor="primary">
+          <Slide transition={["zoom"]} bgColor="secondary">
             <Image src={images.thehaps} height="293px"/>
-            <Heading size={1} fit caps textColor="black">
+            <Heading size={1} fit textColor="black">
               Local events in your hand!
             </Heading>
             {/* <Link href="https://github.com/FormidableLabs/spectacle">
@@ -66,19 +68,42 @@ export default class Presentation extends React.Component {
             <Text textSize="1.5em" margin="20px 0px 0px" bold>Hit Your Right Arrow To Begin!</Text> */}
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
-              The Problem
+            <Heading size={2} caps fit textColor="secondary" textFont="primary">
+              The Problem:
+            </Heading>
+            <Heading size={1} fit textColor="primary" textFont="primary">
+              Existing event sources...
+            </Heading>
+            <List textColor="white">
+              <Appear><ListItem>Poor User-Experience</ListItem></Appear>
+              <Appear><ListItem>Incomplete</ListItem></Appear>
+              <Appear><ListItem>So. Many. Ads.</ListItem></Appear>
+              <Appear><ListItem>Fragmented</ListItem></Appear>
+            </List>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="black">
+            <Heading size={2} caps textColor="secondary" textFont="primary">
+              The Solution:
+            </Heading>
+            <BlockQuote>
+              <Quote>A central, web-based application with multiple views and a clean, snappy UI.</Quote>
+              <Cite>God</Cite>
+            </BlockQuote>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <Heading size={1} caps textColor="secondary" textFont="primary">
+              Features:
+            </Heading>
+            <Heading size={2} textColor="white" textFont="primary">
+              Map View
             </Heading>
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
-              The Solution
-            </Heading>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="black">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
+            <Heading size={1} caps fit textColor="primary" textFont="primary">
               Features
             </Heading>
+
+
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
             <Heading size={2} caps fit textColor="primary" textFont="primary">
