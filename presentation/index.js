@@ -45,7 +45,12 @@ const images = {
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
   markdown: require("../assets/markdown.png"),
-  iphone: require("../assets/iphone.png")
+  iphone: require("../assets/iphone.png"),
+  addEvent: require("../assets/add_event.gif"),
+  detailview: require("../assets/detailview.gif"),
+  filter: require("../assets/filter.gif"),
+  listview: require("../assets/listview.gif"),
+  mapview: require("../assets/mapview.gif")
 };
 
 preloader(images);
@@ -107,7 +112,7 @@ export default class Presentation extends React.Component {
                   <Appear><ListItem>Content Preview Info Windows</ListItem></Appear>
                 </List>
               </Heading>
-              <Image src={images.iphone} height="500px"/>
+              <Image src={images.mapview} height="500px"/>
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
@@ -123,7 +128,7 @@ export default class Presentation extends React.Component {
                   <Appear><ListItem>3 Spots to Access Filter</ListItem></Appear>
                 </List>
               </Heading>
-              <Image src={images.iphone} height="500px"/>
+              <Image src={images.listview} height="500px"/>
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
@@ -139,7 +144,7 @@ export default class Presentation extends React.Component {
                   <Appear><ListItem>Get directions</ListItem></Appear>
                 </List>
               </Heading>
-              <Image src={images.iphone} height="500px"/>
+              <Image src={images.detailview} height="500px"/>
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
@@ -154,7 +159,7 @@ export default class Presentation extends React.Component {
                   <Appear><ListItem>Filter by category</ListItem></Appear>
                 </List>
               </Heading>
-              <Image src={images.iphone} height="500px"/>
+              <Image src={images.filter} height="500px"/>
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
@@ -169,7 +174,7 @@ export default class Presentation extends React.Component {
                   <Appear><ListItem>Date + Time = Unix Timestamp</ListItem></Appear>
                 </List>
               </Heading>
-              <Image src={images.iphone} height="500px"/>
+              <Image src={images.addEvent} height="500px"/>
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.roadblock} bgDarken={0.75}>
@@ -196,6 +201,12 @@ export default class Presentation extends React.Component {
           <Slide transition={["slide"]} bgColor="black">
             <Heading size={2} caps fit textColor="primary" textFont="primary">
               Technology Stack
+            </Heading>
+          </Slide>
+          <Slide transition={["zoom"]} bgColor="secondary">
+            <Image src={images.thehaps} height="293px"/>
+            <Heading size={1} fit textColor="#40c4ff">
+              http://thehaps.herokuapp.com/
             </Heading>
           </Slide>
           {/* <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
