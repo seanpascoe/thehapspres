@@ -8,6 +8,7 @@ import {
   Cite,
   CodePane,
   Deck,
+  Fit,
   Fill,
   Heading,
   Image,
@@ -41,7 +42,8 @@ const images = {
   concert: require("../assets/concert.jpg"),
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
-  markdown: require("../assets/markdown.png")
+  markdown: require("../assets/markdown.png"),
+  iphone: require("../assets/iphone.png")
 };
 
 preloader(images);
@@ -91,36 +93,124 @@ export default class Presentation extends React.Component {
             </BlockQuote>
           </Slide>
           <Slide transition={["slide"]} bgColor="primary">
-            <Heading size={1} caps textColor="secondary" textFont="primary">
+            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
               Features:
             </Heading>
-            <Heading size={2} textColor="white" textFont="primary">
-              Map View
-            </Heading>
+            <Layout>
+              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
+                Map View
+                <List textColor="white">
+                  <Appear><ListItem>Google Maps JS API</ListItem></Appear>
+                  <Appear><ListItem>Custom SVG Markers</ListItem></Appear>
+                  <Appear><ListItem>Content Preview Info Windows</ListItem></Appear>
+                </List>
+              </Heading>
+              <Image src={images.iphone} height="500px"/>
+            </Layout>
           </Slide>
-          <Slide transition={["slide"]} bgColor="black">
-            <Heading size={1} caps fit textColor="primary" textFont="primary">
-              Features
+          <Slide transition={["slide"]} bgColor="primary">
+            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
+              Features:
             </Heading>
-
-
+            <Layout>
+              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
+                List View
+                <List textColor="white">
+                  <Appear><ListItem>Instant Toggle List/Map</ListItem></Appear>
+                  <Appear><ListItem>Sorted by Time Value</ListItem></Appear>
+                  <Appear><ListItem>3 Spots to Access Filter</ListItem></Appear>
+                </List>
+              </Heading>
+              <Image src={images.iphone} height="500px"/>
+            </Layout>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
+              Features:
+            </Heading>
+            <Layout>
+              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
+                Detail View
+                <List textColor="white">
+                  <Appear><ListItem>Full event description</ListItem></Appear>
+                  <Appear><ListItem>Secondary category</ListItem></Appear>
+                  <Appear><ListItem>Get directions</ListItem></Appear>
+                </List>
+              </Heading>
+              <Image src={images.iphone} height="500px"/>
+            </Layout>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
+              Features:
+            </Heading>
+            <Layout>
+              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
+                Filter
+                <List textColor="white">
+                  <Appear><ListItem>Filter by date range - datepicker</ListItem></Appear>
+                  <Appear><ListItem>Filter by category</ListItem></Appear>
+                </List>
+              </Heading>
+              <Image src={images.iphone} height="500px"/>
+            </Layout>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="primary">
+            <Heading caps textColor="secondary" textFont="primary" align='center flex-start'>
+              Features:
+            </Heading>
+            <Layout>
+              <Heading size={2} textColor="white" textFont="primary" align='flex-start flex-start'>
+                Add Event
+                <List textColor="white">
+                  <Appear><ListItem>Address geocoded</ListItem></Appear>
+                  <Appear><ListItem>Date + Time = Unix Timestamp</ListItem></Appear>
+                </List>
+              </Heading>
+              <Image src={images.iphone} height="500px"/>
+            </Layout>
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
             <Heading size={2} caps fit textColor="primary" textFont="primary">
               Roadblocks
             </Heading>
+            <Text size={1} textColor="white" textFont="primary">
+              Lame google maps api packages. Un-stateful!
+            </Text>
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
             <Heading size={2} caps fit textColor="primary" textFont="primary">
+              Roadblocks
+            </Heading>
+            <Text size={1} textColor="white" textFont="primary">
+              Avoiding map reloads.
+            </Text>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="black">
+            <Heading size={2} caps fit textColor="primary" textFont="primary">
+              Roadblocks
+            </Heading>
+            <Text size={1} textColor="white" textFont="primary">
+              Markers at same location, clustering.
+            </Text>
+          </Slide>
+          <Slide transition={["slide"]} bgColor="black">
+            <Heading size={2} caps fit textColor="white">
               Roadmap
             </Heading>
+            <List textColor="white">
+              <Appear><ListItem>Adding events to calendars</ListItem></Appear>
+              <Appear><ListItem>Search function</ListItem></Appear>
+              <Appear><ListItem>Admin backend</ListItem></Appear>
+              <Appear><ListItem>Upvoting, Tags, & Comments</ListItem></Appear>
+            </List>
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
             <Heading size={2} caps fit textColor="primary" textFont="primary">
               Technology Stack
             </Heading>
           </Slide>
-          <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          {/* <Slide transition={["zoom", "fade"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
             <CodePane
               lang="jsx"
               source={require("raw!../assets/deck.example")}
@@ -209,7 +299,7 @@ You can write inline images, [Markdown Links](http://commonmark.org), paragraph 
               Made with love in Seattle by
             </Heading>
             <Link href="http://www.formidablelabs.com"><Image width="100%" src={images.logo}/></Link>
-          </Slide>
+          </Slide> */}
         </Deck>
       </Spectacle>
     );
