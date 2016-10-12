@@ -39,6 +39,8 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   thehaps: require("../assets/thehapslogo-white.svg"),
+  road: require("../assets/road.jpg"),
+  roadblock: require("../assets/roadblock.jpg"),
   concert: require("../assets/concert.jpg"),
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
@@ -83,7 +85,7 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Fragmented</ListItem></Appear>
             </List>
           </Slide>
-          <Slide transition={["slide"]} bgColor="black">
+          <Slide transition={["slide"]} bgImage={images.concert} bgDarken={0.75}>
             <Heading size={2} caps textColor="secondary" textFont="primary">
               The Solution:
             </Heading>
@@ -170,31 +172,17 @@ export default class Presentation extends React.Component {
               <Image src={images.iphone} height="500px"/>
             </Layout>
           </Slide>
-          <Slide transition={["slide"]} bgColor="black">
+          <Slide transition={["slide"]} bgImage={images.roadblock} bgDarken={0.75}>
             <Heading size={2} caps fit textColor="primary" textFont="primary">
               Roadblocks
             </Heading>
-            <Text size={1} textColor="white" textFont="primary">
-              Lame google maps api packages. Un-stateful!
-            </Text>
+            <List textColor="white">
+              <Appear><ListItem>Lame google maps api packages. Un-stateful!</ListItem></Appear>
+              <Appear><ListItem>Avoiding map reloads.</ListItem></Appear>
+              <Appear><ListItem>Markers at same location, clustering.</ListItem></Appear>
+            </List>
           </Slide>
-          <Slide transition={["slide"]} bgColor="black">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
-              Roadblocks
-            </Heading>
-            <Text size={1} textColor="white" textFont="primary">
-              Avoiding map reloads.
-            </Text>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="black">
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
-              Roadblocks
-            </Heading>
-            <Text size={1} textColor="white" textFont="primary">
-              Markers at same location, clustering.
-            </Text>
-          </Slide>
-          <Slide transition={["slide"]} bgColor="black">
+          <Slide transition={["slide"]} bgImage={images.road} bgDarken={0.75}>
             <Heading size={2} caps fit textColor="white">
               Roadmap
             </Heading>
