@@ -80,7 +80,7 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide transition={["fade"]} bgColor="primary">
             <Heading size={1} fit textColor="secondary" textFont="primary">
-              What's the haps!?
+              What's The Haps!?
             </Heading>
             <Appear><Heading size={4} textColor="white" margin="30px 0px">
               The best way to discover local events!
@@ -96,7 +96,7 @@ export default class Presentation extends React.Component {
             <List textColor="white">
               <Appear><ListItem>Incomplete</ListItem></Appear>
               <Appear><ListItem>So. Many. Ads.</ListItem></Appear>
-              <Appear><ListItem>Fragmented</ListItem></Appear>
+              <Appear><ListItem>Poor UI</ListItem></Appear>
             </List>
           </Slide>
           <Slide transition={["spin"]} bgImage={images.concert} bgDarken={0.75}>
@@ -187,12 +187,11 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.roadblock} bgDarken={0.75}>
-            <Heading size={2} caps fit textColor="primary" textFont="primary">
+            <Heading size={1} caps fit textColor="primary" textFont="primary">
               Roadblocks
             </Heading>
             <List textColor="white">
               <Appear><ListItem>Broken Google Maps API Packages. Un-Stateful!</ListItem></Appear>
-              <Appear><ListItem>Avoiding Map Reloads</ListItem></Appear>
               <Appear><ListItem>Markers At Same Location, Clustering</ListItem></Appear>
             </List>
           </Slide>
@@ -207,13 +206,13 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Upvoting, Tags, & Comments</ListItem></Appear>
             </List>
           </Slide>
-          <Slide transition={["slide"]} bgColor="secondary" style={{paddingLeft: "15px !important", paddingRight: "15px !important"}}>
+          <Slide transition={["slide"]} bgColor="primary">
             <Image src={images.js} height="170px" style={{margin: "10px"}} />
             <Image src={images.github} height="170px" style={{margin: "10px"}} />
             <Image src={images.googlemap} height="170px" style={{margin: "10px"}} />
             <Image src={images.heroku} height="170px" style={{margin: "10px"}} />
             <Image src={images.materialize} height="170px" style={{margin: "10px"}} />
-            <Heading size={2} caps fit textColor="primary" textFont="primary" style={{padding: "10px"}}>
+            <Heading size={2} caps fit textColor="white" textFont="primary" style={{padding: "10px"}}>
               Technology Stack
             </Heading>
             <Image src={images.momentjs} height="170px" style={{margin: "10px"}}/>
