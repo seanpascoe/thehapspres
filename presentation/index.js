@@ -74,11 +74,16 @@ export default class Presentation extends React.Component {
         <Deck transition={["zoom", "slide"]} transitionDuration={500}>
           <Slide transition={["zoom"]} bgColor="secondary" style={{paddingTop: "0"}}>
             <Image src={images.thehaps} height="293px"/>
-            <Heading size={1} fit textColor="primary">
-              Local events in your hand!
-            </Heading>
-            <Appear><Heading size={4} textColor="white" textFont="primary">
+            <Appear><Heading size={4} textColor="primary" textFont="primary">
               http://thehapsmap.com
+            </Heading></Appear>
+          </Slide>
+          <Slide transition={["fade"]} bgColor="primary">
+            <Heading size={1} fit textColor="secondary" textFont="primary">
+              What's the haps!?
+            </Heading>
+            <Appear><Heading size={4} textColor="white" margin="30px 0px">
+              The best way to discover local events!
             </Heading></Appear>
           </Slide>
           <Slide transition={["fade"]} bgColor="black">
@@ -100,7 +105,8 @@ export default class Presentation extends React.Component {
               The Solution:
             </Heading>
             <BlockQuote>
-              <Quote>The haps is a central, web-based application with multiple views and a clean, snappy UI.</Quote>
+              <Quote>A central, web-based application with multiple views and a clean, snappy UI.</Quote>
+              <Cite>God</Cite>
             </BlockQuote>
           </Slide>
           <Slide transition={["slide"]} bgColor="white">
