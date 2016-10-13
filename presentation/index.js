@@ -94,7 +94,6 @@ export default class Presentation extends React.Component {
               Existing event sources...
             </Heading>
             <List textColor="white">
-              <Appear><ListItem>Poor User-Experience</ListItem></Appear>
               <Appear><ListItem>Incomplete</ListItem></Appear>
               <Appear><ListItem>So. Many. Ads.</ListItem></Appear>
               <Appear><ListItem>Fragmented</ListItem></Appear>
@@ -118,7 +117,7 @@ export default class Presentation extends React.Component {
                   <List textColor="secondary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
                     <Appear><ListItem>Google Maps JS API</ListItem></Appear>
                     <Appear><ListItem>Custom SVG Markers</ListItem></Appear>
-                    <Appear><ListItem>Content Preview Info Windows</ListItem></Appear>
+                    <Appear><ListItem>Event Preview Info Windows</ListItem></Appear>
                   </List>
                 </Heading>
               </Heading>
@@ -133,8 +132,8 @@ export default class Presentation extends React.Component {
                   List View
                   <List textColor="primary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
                     <Appear><ListItem>Instant Toggle List/Map</ListItem></Appear>
-                    <Appear><ListItem>Sorted by Time</ListItem></Appear>
-                    <Appear><ListItem>3 Spots to Access Filter</ListItem></Appear>
+                    <Appear><ListItem>Structured View</ListItem></Appear>
+                    <Appear><ListItem>Sorted By Time</ListItem></Appear>
                   </List>
                 </Heading>
               </Heading>
@@ -148,9 +147,8 @@ export default class Presentation extends React.Component {
                 <Heading size={2} textColor="primary" textFont="primary" align='flex-start flex-start' textAlign="left">
                   Detail View
                   <List textColor="secondary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
-                    <Appear><ListItem>Full event description</ListItem></Appear>
-                    <Appear><ListItem>Secondary category</ListItem></Appear>
-                    <Appear><ListItem>Get directions</ListItem></Appear>
+                    <Appear><ListItem>All Event Information</ListItem></Appear>
+                    <Appear><ListItem>Get Directions</ListItem></Appear>
                   </List>
                 </Heading>
               </Heading>
@@ -164,8 +162,8 @@ export default class Presentation extends React.Component {
                 <Heading size={2} textColor="secondary" textFont="primary" align='flex-start flex-start' textAlign="left">
                   Filter
                   <List textColor="primary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
-                    <Appear><ListItem>Filter by date</ListItem></Appear>
-                    <Appear><ListItem>Filter by category</ListItem></Appear>
+                    <Appear><ListItem>Filter By Date</ListItem></Appear>
+                    <Appear><ListItem>Filter By Category</ListItem></Appear>
                   </List>
                 </Heading>
               </Heading>
@@ -179,7 +177,8 @@ export default class Presentation extends React.Component {
                 <Heading size={2} textColor="primary" textFont="primary" align='flex-start flex-start' textAlign="left">
                   Add Event
                   <List textColor="secondary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
-                    <Appear><ListItem>Address geocoded</ListItem></Appear>
+                    <Appear><ListItem>Address Geocoded</ListItem></Appear>
+                    <Appear><ListItem>Primary/Secondary Category</ListItem></Appear>
                     <Appear><ListItem>Date + Time = Unix Timestamp</ListItem></Appear>
                   </List>
                 </Heading>
@@ -192,9 +191,9 @@ export default class Presentation extends React.Component {
               Roadblocks
             </Heading>
             <List textColor="white">
-              <Appear><ListItem>Lame google maps api packages. Un-stateful!</ListItem></Appear>
-              <Appear><ListItem>Avoiding map reloads</ListItem></Appear>
-              <Appear><ListItem>Markers at same location, clustering</ListItem></Appear>
+              <Appear><ListItem>Broken Google Maps API Packages. Un-Stateful!</ListItem></Appear>
+              <Appear><ListItem>Avoiding Map Reloads</ListItem></Appear>
+              <Appear><ListItem>Markers At Same Location, Clustering</ListItem></Appear>
             </List>
           </Slide>
           <Slide transition={["slide"]} bgImage={images.road} bgDarken={0.75}>
@@ -202,9 +201,9 @@ export default class Presentation extends React.Component {
               Roadmap
             </Heading>
             <List textColor="white">
-              <Appear><ListItem>Adding events to calendars</ListItem></Appear>
-              <Appear><ListItem>Search function</ListItem></Appear>
-              <Appear><ListItem>Admin backend</ListItem></Appear>
+              <Appear><ListItem>Adding Events To Calendars</ListItem></Appear>
+              <Appear><ListItem>Search Function</ListItem></Appear>
+              <Appear><ListItem>Admin Backend</ListItem></Appear>
               <Appear><ListItem>Upvoting, Tags, & Comments</ListItem></Appear>
             </List>
           </Slide>
