@@ -178,7 +178,6 @@ export default class Presentation extends React.Component {
                   Add Event
                   <List textColor="secondary" style={{lineHeight: '1.5', marginTop: '30px', marginRight: "20px", listStylePosition: "outside", paddingLeft: "40px"}}>
                     <Appear><ListItem>Address Geocoded</ListItem></Appear>
-                    <Appear><ListItem>Primary/Secondary Category</ListItem></Appear>
                     <Appear><ListItem>Date + Time = Unix Timestamp</ListItem></Appear>
                   </List>
                 </Heading>
